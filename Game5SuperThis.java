@@ -16,3 +16,30 @@ class Main {
     subclass.callSuperThis();
   }
 }
+
+
+// subclass
+
+public class SubClass extends SuperClass
+{
+  public void print()
+  {
+    System.out.println("서브클래스");
+  }
+
+  public void callSuperThis()
+  {
+    super.print(); // SuperClass 클래스의 print() 메소드
+    this.print();  // SubClass 클래스의 print() 메소드
+  }
+}
+
+// superclass
+
+public class SuperClass
+{
+  public void print()
+  {
+    System.out.println("수퍼클래스");
+  }
+}
